@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@500&family=Recursive:wght@600&display=swap');
+
+/* site wide */
+:root {
+    --base-color: #dfe4ea;
+    --accent-color: #1dd05d;
+    --primary-color: #2f3542;
+    --text-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    /* background: #fbffff; */
+    background: var(--base-color);
+}
+
+header {
+    color: var(--primary-color);
+}
+
+ul { list-style: none; }
+
+footer {
+    background: var(--primary-color);
+    color: var(--text-color);
+    height: 4rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* site spesific utils */
+.container {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.full {
+    width: 100%;
+}
+
+.three-qurter {
+    width: 75%;
+}
+
+.half {
+    width: 50%;
+}
+
+.quarter {
+    width: 25%;
+}
+
+.spaced-around {
+    justify-content: space-around;
+}
+
+.spaced-between {
+    justify-content: space-between;
+}
+
+.spaced-evently {
+    justify-content: space-between;
+}
+
+.justify-left {
+    justify-content: flex-end;
+}
+
+.justify-right {
+    justify-content: flex-end;
+}
+
+.centered {
+    justify-content: center;
+}
+
+.center-aligned {
+    align-items: center;
+}
+
+.baseline-aligned {
+    align-items: baseline;
+}
+
+.stretched {
+    align-items: stretch;
+}
+
+.bottom-aligned {
+    align-items: flex-end;
+}
+
+.top-aligned {
+    align-items: flex-start;
+}
+
+/* customization  */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.icon {
+    width: 32px;
+}
+
+.masthead {
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+
+.nav-wrapper {
+    padding: 1rem;
+    border-bottom: 2px dashed var(--accent-color);
+}
+
+.content-wrapper {
+    margin: 2rem auto;
+}
+
+.title {
+    flex-basis: 20%;
+    height: 90%;
+    padding: 1rem;
+}
+
+.details {
+    flex-basis: 80%;
+    padding: 1rem;
+}
+
+.details > * + *,
+main > * + * {
+    margin-top: 1rem;
+}
+
+main > * + * {
+    margin-top: 2rem;
+}
+
+.details > div {
+    padding: 0.5rem;
+}
+
+main > section {
+    border-radius: 7px;
+    color: var(--text-color);
+    background: var(--accent-color);
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+
+.details figure {
+    margin-top: 0;
+    padding: 0.5px;
+}
